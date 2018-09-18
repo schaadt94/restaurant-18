@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+
+        <button class="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo-menu"><img src="billeder/logo.png" alt="laCaverna logo"></div>
+                </li>
+                <li><br><br><br><a href="index.html">Forside</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="book.html">Book bord</a></li>
+                <li><a href="kontakt.html">Kontakt</a><br><br><br><br><br><br><br><br><br><br></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="header">
+        <div class="logo-background">
+            <div class="logo-menusite"><img src="billeder/logo.png" alt="La Caverna logo"></div>
+        </div>
+    </div>
+
+    <div class="knap-container">
+        <div class="goDownKnap">
+            <a href="#pilNedHer"> <img src="billeder/pilned.png" alt="pil ned"></a></div>
+    </div>
+
+    <section id="pilNedHer">
+        <div id="velkommen">
+            <h4>Velkommen</h4>
+        </div>
+        <div class="forside">
+            <div class="news">
+                <div class="txt">
+                    <h1>Nyhed på menukortet</h1>
+                    <a href="menu.html"><img src="billeder/billede9.jpg" alt="pizza no 9"></a>
+                    <p><b>Pizza No9</b></p>
+                    <p><b>Stenovns pizza af frisk øko dej og lækkert fyld af god kvalitet</b></p>
+                    <p>Tomatsauce, fior de latte (øko), bresaola, balsamico og rucula</p>
+
+                </div>
+            </div>
+            <div class="open">
+                <div class="txt txt1">
+                    <h1>Åbningstider</h1>
+
+                    <p><b>Mandag-Torsdag</b> kl 12.00 - 00.00<br> <b>Fredag-Søndag</b> kl 9.00 - 02.00</p>
+
+                    <h1>Adresse</h1>
+                    <p>Oven Vandet 44<br> 1415 København</p>
+
+                    <img src="billeder/wow.jpg" alt="restautant">
+                </div>
+            </div>
+        </div>
+    </section>
+     <footer>
+        <b>Projekt af Helena Schaadt // Københavns erhvers akademi 2. semester</b>
+    </footer>
+    <script>
+        function onLoad() {
+
+            // if (window.innerWidth <= 768) {
+
+            function toggleMenu() {
+                document.querySelector(".burger").classList.toggle("change");
+                document.querySelector("nav").classList.toggle("show");
+            }
+            document.querySelector(".burger").addEventListener("click", toggleMenu);
+            document.querySelector("ul").addEventListener("click", toggleMenu);
+
+        }
+        //}
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            onLoad();
+        });
+    </script>
+
+
+</body>
+
+</html>

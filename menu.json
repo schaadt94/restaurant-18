@@ -1,0 +1,136 @@
+[
+    {
+        "navn": "No1",
+        "kortbeskrivelse": "Tomatsauce, fior de latte (øko), basilikum og olivenolie",
+        "kategori": "Pizza",
+        "pris": 80,
+        "billede": "billede1"
+  },
+    {
+        "navn": "No2",
+        "kortbeskrivelse": "Taleggio, finocchinona, syltede fennikel og grøn oliven tapenade",
+        "kategori": "Pizza",
+        "pris": 100,
+        "billede": "billede2"
+  },
+    {
+        "navn": "No3",
+        "kortbeskrivelse": "Hvid sauce, mozzarella, kødboller og salvie",
+        "kategori": "Pizza",
+        "pris": 90,
+        "billede": "billede3"
+  },
+    {
+        "navn": "No4",
+        "kortbeskrivelse": "Tomatsauce, mozzarella, ansjoser og oregano",
+        "kategori": "Pizza",
+        "pris": 80,
+        "billede": "billede4"
+  },
+    {
+        "navn": "No5",
+        "kortbeskrivelse": "Grønsauce, aubergine, peberfrugt, syltede rødløg, rucola og chiliolie",
+        "kategori": "Pizza",
+        "pris": 100,
+        "billede": "billede5"
+  },
+    {
+        "navn": "No6",
+        "kortbeskrivelse": "Tomatsauce, mozzarella, kogt skinke, sort oliven og grillede artiskokker",
+        "kategori": "Pizza",
+        "pris": 90,
+        "billede": "billede6"
+  },
+    {
+        "navn": "No7",
+        "kortbeskrivelse": "Rødsauce, gedeost, nduja (stærk krydret pølse), aubergine, friske tomater og rucula",
+        "kategori": "Pizza",
+        "pris": 100,
+        "billede": "billede7"
+  },
+    {
+        "navn": "No8",
+        "kortbeskrivelse": "Tomatsauce, mozzarella, vildsvinepølse, valnødder og balsamico",
+        "kategori": "Pizza",
+        "pris": 100,
+        "billede": "billede8"
+  },
+    {
+        "navn": "No9",
+        "kortbeskrivelse": "Tomatsauce, fior de latte (øko), bresaola, balsamico og rucula",
+        "kategori": "Pizza",
+        "pris": 100,
+        "billede": "billede9"
+  },
+
+    {
+        "navn": "Tomat salat",
+        "kortbeskrivelse": "Tomat, frisk mozeralla, oliven olie og basilikum",
+        "kategori": "Salat",
+        "pris": 65,
+        "billede": "billede19"
+  },
+    {
+        "navn": "Cæsar salat",
+        "kortbeskrivelse": "Rosmarine, øko-kylling, ansjoser, parmesan og croutoner",
+        "kategori": "Salat",
+        "pris": 75,
+        "billede": "billede12"
+  },
+    {
+        "navn": "Salat med tomat og fior de latte",
+        "kortbeskrivelse": "Kapers, basilikum, balsamico og oliven olie",
+        "kategori": "Salat",
+        "pris": 75,
+        "billede": "billede13"
+  },
+    {
+        "navn": "Bønne- og tunsalat",
+        "kortbeskrivelse": "øko tun, øko æg, bønner, løg og tomat",
+        "kategori": "Salat",
+        "pris": 75,
+        "billede": "billede14"
+  },
+    {
+        "navn": "Kødboller i tomatsauce",
+        "kortbeskrivelse": "med salvie og parmesan serveres med frisk pasta og brød",
+        "kategori": "Pasta",
+        "pris": 85,
+        "billede": "billede15"
+  },
+    {
+        "navn": "Spagetti med kantareller og tomat",
+        "kortbeskrivelse": "Frisk spagetti med dansk kantareller og (øko) cherrytomater",
+        "kategori": "Pasta",
+        "pris": 85,
+        "billede": "billede16"
+  },
+    {
+        "navn": "Penne fior de latte",
+        "kortbeskrivelse": "Frisk penne med cherry tomater, aubergine, fior de latte og olivenolie",
+        "kategori": "Pasta",
+        "pris": 85,
+        "billede": "billede17"
+  },
+    {
+        "navn": "Spagetti bolognese",
+        "kortbeskrivelse": "Frisk spagetti med cremet kødsovs og parmesan",
+        "kategori": "Pasta",
+        "pris": 85,
+        "billede": "billede18"
+  },
+    {
+        "navn": "Tiramisu",
+        "kortbeskrivelse": "",
+        "kategori": "Dessert",
+        "pris": 55,
+        "billede": "billede10"
+  },
+    {
+        "navn": "Chokomousse",
+        "kortbeskrivelse": "",
+        "kategori": "Dessert",
+        "pris": 55,
+        "billede": "billede11"
+  }
+]

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        .menukort {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            border: none;
+            justify-self: end;
+            margin-top: 4vw;
+            margin-right: 4vw;
+            background-color: rgba(255, 192, 203, 0);
+
+
+        }
+
+        ul {
+            background-color: #b7e4f4;
+            list-style: none;
+            margin: 40px;
+            padding: 20px;
+            height: 100%;
+
+        }
+
+        h2 {
+            font-size: 1.2em;
+            margin-top: 30px;
+            margin-left: -60px;
+        }
+
+        li {
+            width: 65vw;
+            margin-left: -60px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.8em;
+            font-family: sans-serif;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3,
+        .bar4 {
+            width: 25px;
+            height: 5px;
+            background-color: #9ec8d6;
+            margin: -3px 0;
+            transition: 0.4s;
+        }
+
+        nav {
+            margin-left: 5px;
+            margin-top: -10px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: 0.6s;
+            /*background-color: #9ec8d6;*/
+        }
+
+        nav.show {
+
+            max-height: 100%;
+        }
+
+        /* Rotate first bar */
+
+        .change .bar1 {
+            transform: rotate(-90deg) translate(-9px, 6px);
+        }
+
+        /* Fade out the second bar */
+
+        /* Rotate last bar */
+
+        .change .bar2 {
+            transform: rotate(0deg) translate(5.5px, 5.5px);
+        }
+
+
+
+
+
+
+        img {
+            margin-top: -80px;
+            margin-bottom: -60px;
+            margin-left: -19px;
+            width: 40vw;
+            transform: rotate(90deg);
+        }
+
+        .pizza {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .pasta {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pizza</h1>
+    <button class="menukort">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+    </button>
+    <main>
+        <nav>
+            <ul>
+
+                <div class="pizza"></div>
+                <template class="pizza-template">
+                    <div class="pizza">
+
+                        <ul>
+                        <img src="" alt="">
+                        <h2></h2>
+                        <li class="kategori"></li>
+                        <li class="kortbeskrivelse"></li>
+                        <li class="pris"></li>
+                        </ul>
+                    </div>
+                </template>
+            </ul>
+        </nav>
+    </main>
+
+
+
+
+    <h1>Pasta</h1>
+    <button class="menukort">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+    </button>
+    <main>
+        <nav>
+            <ul>
+
+                <div class="pasta"></div>
+                <template class="pasta-template">
+                    <div class="pasta">
+
+                        <ul>
+                        <img src="" alt="">
+                        <h2></h2>
+                        <li class="kategori"></li>
+                        <li class="kortbeskrivelse"></li>
+                        <li class="pris"></li>
+                        </ul>
+                    </div>
+                </template>
+            </ul>
+        </nav>
+    </main>
+
+
+
+
+
+
+
+    <script>
+        function onLoad() {
+
+
+            function toggleMenu() {
+                document.querySelector(".menukort").classList.toggle("change");
+                document.querySelector("nav").classList.toggle("show");
+            }
+            document.querySelector(".menukort").addEventListener("click", toggleMenu);
+            document.querySelector("ul").addEventListener("click", toggleMenu);
+
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            onLoad();
+
+        });
+
+
+
+
+
+        let pizzaer = [{
+                "navn": "No1",
+                "kortbeskrivelse": "Tomatsauce, fior de latte (øko), basilikum og olivenolie",
+                "kategori": "Pizza",
+                "pris": 80,
+                "billede": "billede1"
+            },
+            {
+                "navn": "No2",
+                "kortbeskrivelse": "Taleggio, finocchinona, syltede fennikel og grøn oliven tapenade",
+                "kategori": "Pizza",
+                "pris": 100,
+                "billede": "billede2"
+            },
+            {
+                "navn": "No3",
+                "kortbeskrivelse": "Hvid sauce, mozzarella, kødboller og salvie",
+                "kategori": "Pizza",
+                "pris": 90,
+                "billede": "billede3"
+            },
+            {
+                "navn": "No4",
+                "kortbeskrivelse": "Tomatsauce, mozzarella, ansjoser og oregano",
+                "kategori": "Pizza",
+                "pris": 80,
+                "billede": "billede4"
+            },
+            {
+                "navn": "No5",
+                "kortbeskrivelse": "Grønsauce, aubergine, peberfrugt, syltede rødløg, rucola og chiliolie",
+                "kategori": "Pizza",
+                "pris": 100,
+                "billede": "billede5"
+            },
+            {
+                "navn": "No6",
+                "kortbeskrivelse": "Tomatsauce, mozzarella, kogt skinke, sort oliven og grillede artiskokker",
+                "kategori": "Pizza",
+                "pris": 90,
+                "billede": "billede6"
+            },
+            {
+                "navn": "No7",
+                "kortbeskrivelse": "Rødsauce, gedeost, nduja (stærk krydret pølse), aubergine, friske tomater og rucula",
+                "kategori": "Pizza",
+                "pris": 100,
+                "billede": "billede7"
+            },
+            {
+                "navn": "No8",
+                "kortbeskrivelse": "Tomatsauce, mozzarella, vildsvinepølse, valnødder og balsamico",
+                "kategori": "Pizza",
+                "pris": 100,
+                "billede": "billede8"
+            },
+            {
+                "navn": "No9",
+                "kortbeskrivelse": "Tomatsauce, fior de latte (øko), bresaola, balsamico og rucula",
+                "kategori": "Pizza",
+                "pris": 100,
+                "billede": "billede9"
+            }
+        ];
+
+        document.addEventListener("DOMContentLoaded", start1);
+
+        function start1() {
+            dest1 = document.querySelector(".pizza");
+            temp1 = document.querySelector(".pizza-template");
+            pizzaer.forEach(pizza => {
+                let klon1 = temp1.cloneNode(true).content;
+                klon1.querySelector("h2").textContent = pizza.navn;
+                klon1.querySelector("ul .kategori").textContent = pizza.kategori;
+                klon1.querySelector("ul .kortbeskrivelse").textContent = pizza.kortbeskrivelse;
+                klon1.querySelector("ul .pris").textContent = pizza.pris;
+                klon1.querySelector("img").src = "billeder/" + pizza.billede + ".jpg";
+                dest1.appendChild(klon1);
+            })
+        };
+
+
+        let pastaer = [{
+            "navn": "Kødboller i tomatsauce",
+            "kortbeskrivelse": "med salvie og parmesan serveres med frisk pasta og brød",
+            "kategori": "Pasta",
+            "pris": 85,
+            "billede": "billede15"
+        }, {
+            "navn": "Spagetti med kantareller og tomat",
+            "kortbeskrivelse": "Frisk spagetti med dansk kantareller og (øko) cherrytomater",
+            "kategori": "Pasta",
+            "pris": 85,
+            "billede": "billede16"
+        }, {
+            "navn": "Penne fior de latte",
+            "kortbeskrivelse": "Frisk penne med cherry tomater, aubergine, fior de latte og olivenolie",
+            "kategori": "Pasta",
+            "pris": 85,
+            "billede": "billede17"
+        }, {
+            "navn": "Spagetti bolognese",
+            "kortbeskrivelse": "Frisk spagetti med cremet kødsovs og parmesan",
+            "kategori": "Pasta",
+            "pris": 85,
+            "billede": "billede18"
+        }];
+
+        document.addEventListener("DOMContentLoaded", start2);
+
+        function start2() {
+            dest2 = document.querySelector(".pasta");
+            temp2 = document.querySelector(".pasta-template");
+            console.log(start2);
+            pastaer.forEach(pasta => {
+                let klon2 = temp2.cloneNode(true).content;
+                klon2.querySelector("h2").textContent = pasta.navn;
+                klon2.querySelector("ul .kategori").textContent = pasta.kategori;
+                klon2.querySelector("ul .kortbeskrivelse").textContent = pasta.kortbeskrivelse;
+                klon2.querySelector("ul .pris").textContent = pasta.pris;
+                klon2.querySelector("img").src = "billeder/" + pasta.billede + ".jpg";
+                dest2.appendChild(klon2);
+            })
+        };
+    </script>
+</body>
+
+</html>

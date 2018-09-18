@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <button class="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo-menu"><img src="billeder/logo.png" alt="laCaverna logo"></div>
+                </li>
+                <li><br><br><br><a href="index.html">Forside</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="book.html">Book bord</a></li>
+                <li><a href="kontakt.html">Kontakt</a><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="header">
+        <div class="logo-background">
+            <div class="logo-menusite"><a href="index.html"><img src="billeder/logo.png" alt="La Caverna logo"></a></div>
+        </div>
+    </div>
+
+    <div class="knap-container">
+        <div class="goDownKnap">
+            <a href="#pilNedHer1"> <img src="billeder/pilned.png" alt="pil ned"></a></div>
+    </div>
+
+    <section id="pilNedHer1">
+
+        <div class="book-overskrift">
+            <h4>Velkommen til La caverna restaurant</h4>
+        </div>
+
+    </section>
+
+    <div class="box-container">
+        <div class="box box1">
+            <h2>Book bord</h2><br>
+            <p>Navn:<br><input class="Navn"></p>
+            <p>Dato:<br><input class="dato: 01/01/2001"></p>
+            <p>Tid:<br><input class="tid"></p>
+            <p>Personer<br><input class="personer"></p>
+            <button class="send">Send</button>
+        </div>
+        <div class="box box2">
+            <img src="billeder/billede14.jpg" alt="salat">
+        </div>
+
+
+
+
+
+        <footer>
+            <br>
+            <b>Projekt af Helena Schaadt // Københavns erhvers akademi 2. semester</b>
+        </footer>
+
+
+        <script>
+            function onLoad() {
+
+                // if (window.innerWidth <= 768) {
+
+                function toggleMenu() {
+                    document.querySelector(".burger").classList.toggle("change");
+                    document.querySelector("nav").classList.toggle("show");
+                }
+                document.querySelector(".burger").addEventListener("click", toggleMenu);
+                document.querySelector("ul").addEventListener("click", toggleMenu);
+
+            }
+            //}
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                onLoad();
+            });
+        </script>
+
+
+</body>
+
+</html>
