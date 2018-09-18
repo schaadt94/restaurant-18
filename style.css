@@ -342,6 +342,58 @@ footer {
 
 }
 
+
+#modal {
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+    transition: all 1s;
+    opacity: 0;
+    pointer-events: none;
+    overflow: scroll;
+    transition: 1s;
+    z-index: 2;
+}
+
+#modal-content {
+    width: 90vw;
+    height: 80vw;
+    background-color: #f4f4f4;
+    margin: auto;
+    margin-top: 5vw;
+    padding-top: 16vw
+}
+
+#modal.vis {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s;
+    height: 1050px;
+    margin-top: -340px;
+}
+
+#modal img {
+    margin-left: -14vw;
+    width: 45vw;
+    transform: rotate(90deg);
+    object-fit: scale-down;
+    margin-top: -5vw;
+}
+
+#modal button {
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+
+
+
 @media screen and (min-width:580px) {
     h4 {
         font-family: "Raleway", sans-serif;
@@ -405,7 +457,7 @@ footer {
 
 
     .overskrift {
-        margin-top: 40px;
+        margin-top: 13vw;
         margin-left: 60px;
     }
 
@@ -489,6 +541,56 @@ footer {
     }
 
 
+    #modal {
+        width: 100vw;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.76);
+        text-align: center;
+        transition: all 1s;
+        opacity: 0;
+        pointer-events: none;
+        overflow: scroll;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    #modal-content {
+        width: 70vw;
+        height: 60vw;
+        background-color: #f4f4f4;
+        margin: auto;
+        margin-top: 1vw;
+        padding-top: 9vw
+    }
+
+    #modal.vis {
+        opacity: 1;
+        pointer-events: all;
+        transition: 0.5s;
+        height: 1050px;
+        margin-top: -540px;
+    }
+
+    #modal img {
+        margin-left: -8vw;
+
+        width: 35vw;
+        transform: rotate(90deg);
+        object-fit: scale-down;
+        margin-top: -5vw;
+    }
+
+    #modal button {
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 25px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+
+
+
 
 
 
@@ -542,6 +644,7 @@ footer {
         .news {
             grid-area: side1;
             width: 35vw;
+            height: 37vw;
             background-color: #f4f4f4;
             box-shadow: 5px 5px 20px #7b7b7b;
         }
@@ -561,6 +664,8 @@ footer {
             justify-content: center;
         }
         .goDownKnap {
+            display: inline-block;
+            ;
             width: 50px;
             height: 50px;
             border-radius: 50px;
@@ -579,20 +684,22 @@ footer {
         }
 
         .overskrift {
-            margin-top: -150px;
-            margin-left: 160px;
+            margin-top: -110px;
+            margin-left: 115px;
         }
 
         .menu-overskrift h1 {
-            margin-left: 10vw;
+            margin-left: 9vw;
         }
 
         .book-overskrift {
-            margin-left: 9vw;
-            margin-top: -10vw;
+            margin-left: 7vw;
+            margin-top: -5vw;
             margin-bottom: -6vw;
         }
-
+        #velkommen {
+            margin-left: -2vw;
+        }
         .logo-menu img {
             width: 30vw;
         }
@@ -601,6 +708,8 @@ footer {
             width: 30vw;
 
         }
+
+
 
         .logo-background {
 
@@ -695,6 +804,9 @@ footer {
             margin-top: -5px
         }
 
+
+
+
         footer {
             /*   padding-left: 40vw;*/
             padding-top: 40px;
@@ -702,4 +814,51 @@ footer {
             text-align: center;
             font-size: 1.5em;
 
+        }
+        #modal {
+            width: 100vw;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.76);
+            text-align: center;
+            transition: all 1s;
+            opacity: 0;
+            pointer-events: none;
+            overflow: scroll;
+            transition: 1s;
+            z-index: 2;
+        }
+
+        #modal-content {
+            width: 40vw;
+            height: 30vw;
+            background-color: #f4f4f4;
+            margin: auto;
+            margin-top: 1vw;
+            padding-top: 5vw
+        }
+
+        #modal.vis {
+            opacity: 1;
+            pointer-events: all;
+            transition: 0.5s;
+            height: 750px;
+            margin-top: -900px;
+        }
+
+        #modal img {
+            margin-left: -5vw;
+            height: 35vw;
+            width: 50vw;
+            transform: rotate(90deg);
+            object-fit: scale-down;
+            margin-top: -5vw;
+        }
+
+        #modal button {
+            font-size: 1em;
+            font-weight: 600;
+            margin-top: 25px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
         }

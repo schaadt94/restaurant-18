@@ -64,6 +64,18 @@
             <button class="menu-item" data-kategori="Dessert">Desserter</button>
         </div>
 
+        <section id="modal">
+            <button>X</button>
+            <div id="modal-content">
+                <h2 class="modal-navn"></h2>
+                <strong><span class="data-kategori"></span> </strong><br> <br>
+                <span class="data-kortbeskrivelse"></span><br> <br>
+                <span>Pris: </span><span class="data-pris"></span>
+                <img class="modal-billede" src="" alt=""> <br>
+
+
+            </div>
+        </section>
 
 
         <div class="menu-overskrift">
@@ -176,14 +188,14 @@
             })
         }
 
-        function visModal(retter) {
+        function visModal(ret) {
             modal.classList.add("vis");
-            modal.querySelector(".modal-navn").textContent = retter.navn;
-            modal.querySelector(".modal-billede").src = "billeder/" + retter.billede + ".jpg";
-            modal.querySelector(".modal-billede").alt = "Foto af " + retter.navn;
-            modal.querySelector(".data-kategori").textContent = retter.kategori;
-            modal.querySelector(".data.kortbeskrivelse").textContent = retter.kortbeskrivelse;
-            modal.querySelector(".data-pris").textContent = retter.pris;
+            modal.querySelector(".modal-navn").textContent = ret.navn;
+            modal.querySelector(".modal-billede").src = "billeder/" + ret.billede + ".jpg";
+            modal.querySelector(".modal-billede").alt = "Foto af " + ret.navn;
+            modal.querySelector(".data-kategori").textContent = ret.kategori;
+            modal.querySelector(".data-kortbeskrivelse").textContent = ret.kortbeskrivelse;
+            modal.querySelector(".data-pris").textContent = ret.pris;
             modal.querySelector("button").addEventListener("click", skjulModal);
         }
 
@@ -192,7 +204,6 @@
 
 
         }
-
     </script>
 </body>
 
